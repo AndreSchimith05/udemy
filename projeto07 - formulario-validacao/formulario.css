@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --background-color:#171717;
+    --background-color-form:#0d100f;
+    --background-color-input:#2e2e2e;
+    --background-color-input-focus:#484848;
+}
+body{
+    background-color: var(--background-color);
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color-form);
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    border: none;
+    padding: 1.5rem;
+}
+input{
+    /*dois borders criam o efeito cascata*/
+    border: none;
+    border-bottom: 3px solid white;
+    margin-bottom: 0.8rem;
+    padding: 5px;
+    background-color: var(--background-color-input);
+}
+input:focus:invalid{
+    outline: none;
+    border-bottom: 3px solid red;
+    background-color:var(--background-color-input-focus) ;
+}
+input:focus:valid{
+    outline: none;
+    border-bottom: 3px solid green;
+    background-color: var(--background-color-input-focus);
+}
+label{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+textarea{
+    resize: none;
+}
+.botoes{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+.botao{
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none;
+}
+.green{
+    background-color: green;
+    color: white;
+}
+.red{
+    background-color: red;
+    color: white;
+
+}

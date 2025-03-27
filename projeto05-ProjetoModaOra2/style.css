@@ -1,0 +1,144 @@
+:root{
+    --header-background:#162028;
+    --header-text-color:#425564;
+    --body-color: #555;
+    --body-second-color:#fff;
+    --last-background-color:#003d52;
+    --footer-background-color:#0b171f;
+    --footer-text-color:#6f8597;
+    --title-font:viaoda;
+    --body-font:roboto;
+}
+@font-face {
+    font-family:viaoda;
+    src: url(font/ViaodaLibre-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height:calc(100vh - 5rem);
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--header-background);
+    color: var(--header-text-color);
+}
+.logo{
+    font-family: var(--title-font);
+    text-decoration: none;
+    color: var(--body-second-color);
+    font-size: 2.5rem;
+}
+ul li > a{
+    color: var(--header-text-color);
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul li > a:hover{
+    color: var(--body-second-color);
+}
+nav ul{
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+.background-1{
+    height: 75rem;
+    background: url(imagens/topo.jpg) no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-section{
+    margin: auto;
+    max-width:86rem ;
+    width:70%;
+}
+.article > h2{
+    font-family: var(--title-font);
+    font-size: 2.8rem;
+    margin: 3rem 0;
+}
+.article > p{
+    color: var(--body-color);
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+.article-center{
+    text-align: center;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+.image-container--itens{
+    flex-basis: 20rem;
+    flex-grow: 1;
+}
+.image-container--itens img{
+    width: 100%;
+}
+.first-description{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1.5rem;
+}
+.second-description{
+    font-size: 1.5rem;
+}
+.first-description, .second-description{
+    text-align: center;
+}
+.article-left-side > h2{
+    text-transform: uppercase;
+    color: var(--body-second-color);
+    margin-top: 5rem;
+}
+.article-left-side >p{
+    color: var(--body-second-color);
+}
+.article-left-side{
+    text-align: left;
+}
+.last-background{
+    width: 100%;
+    background-color: var(--last-background-color);
+    background: var(--last-background-color) url(imagens/bg_detalhe.png) right bottom no-repeat;
+    padding-bottom: 2rem;
+}
+footer{
+    background-color: var(--footer-background-color);
+}
+footer p{
+    letter-spacing: 0.5rem;
+    color: var(--footer-text-color);
+    font-size: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+}

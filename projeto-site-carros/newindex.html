@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nexanova.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>LandingPage - NexaNova</title>
+</head>
+<header class="header">
+    <span class="material-symbols-outlined" onclick="clickMenu()">
+        menu
+        </span>
+    <nav id="nav" class="nav">
+        <ul class="list-container">
+            <li><a class="logo" href="#">NexaNova</a></li>
+            <li><a href="#">inicio</a></li>
+            <li><a href="#">sobre nós</a></li>
+            <li><a href="#">serviços</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a class="header-btn" href="">contato</a></li>
+        </ul>
+    </nav>
+</header>
+<body onresize="mudouTamanho()">
+    <main class="main">
+        <section class="hero-banner">
+            <h1 class="main-title"><span class="h1-color1">Empoderando</span> sua jornada com <span class="h1-color2">Excelencia</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum dolorem, eligendi corrupti at facilis exercitationem cupiditate ducimus officia est neque consectetur, odio, repellendus ab. Recusandae pariatur aliquam dolorum quisquam consequuntur!</p>
+            <a class="main-button" href="#">contato</a>
+        </section>
+        <!-- segunda seção --> 
+        <section class="size-control-container first-section">
+            <article class="beside-article">
+                <div class="div-settings">
+                    <h3 class="title-h3-settings">coleção premium</h3>
+                    <p class="p-settings">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi excepturi accusamus consequuntur ratione quisquam fugiat a hic totam enim, illo atque.</p>
+                </div>
+                <img class="image" src="image/torquoise-car-3.jpg" alt="">
+            </article>
+            <article class="beside-article">
+                <div class="div-settings ">
+                    <h3 class="title-h3-settings">versátil e confiavel</h3>
+                    <p class="p-settings">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi excepturi accusamus consequuntur ratione quisquam fugiat a hic totam enim, illo atque.</p>
+                </div>
+                <img class="image" src="image/car-2.jpg" alt="">
+            </article>
+        </section>
+            <!--terceira seção -->
+        <section class="size-control-container">
+            <article class="third-section-ipad-desktop">
+                 <div class="div-settings div-settings-third">
+                    <h2 class="title-h2-settings">Aventure-se Conosco</h2>
+                    <p class="p-settings">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure placeat omnis laborum! Similique aliquid reiciendis quis architecto, minus possimus commodi earum assumenda veniam ipsum.
+                    </p>
+                    <a class="main-button" href="#">contato</a>
+                </div>
+                <img class="image" src="image/torquoise-car-2.jpg" alt="">
+            </article>
+            </section>
+            <!-- quarta seção-->
+            <section class="size-control-container">
+                    <article>
+                        <div class="div-settings div-settings-fourth">
+                            <h2 class="title-h2-settings">Nós somos dedicados em prover serviços de qualidade</h2>
+                            <p class="p-settings">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quasi nemo tenetur nam consectetur quod quam, doloribus dicta iusto natus.
+                            </p>
+                            <img src="image/torquoise-car-4.jpg" alt="" class="image">
+                        </div>
+                    </article>
+                </section>
+                <!-- quinta seção -->
+                <section class="size-control-container card-container">
+                    <article class="cards">
+                        <h3 class="title-h3-settings">Mecanicos Certificados</h3>
+                        <p class="p-settings p-settings-cards">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, fuga.
+                        </p>
+                    </article>
+                    <article class="cards">
+                        <h3 class="title-h3-settings">Marcas Populares</h3>
+                        <p class="p-settings p-settings-cards">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, fuga.
+                        </p>
+                    </article>
+                    <article class="cards">
+                        <h3 class="title-h3-settings">Preços Razoaveis</h3>
+                        <p class="p-settings p-settings-cards">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, fuga.
+                        </p>
+                    </article>
+                    <article class="cards">
+                        <h3 class="title-h3-settings">Carros da Melhor Qualidade</h3>
+                        <p class="p-settings p-settings-cards">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, fuga.
+                        </p>
+                    </article>
+                </section>
+                <!--sexta seção-->
+                <section class="size-control-container sixth-section-margin" >
+                    <h2 class="title-h2-settings">O maior mercado de carros do mundo</h2>
+                    <img src="image/4.jpg" alt="" class="image">
+                    <p class="p-settings">
+                        Em nosso mercado de carros, nos trazemos para você os melhores veiculos das melhor marcas. Encontre o carro que combina com seu estilo.
+                    </p>
+                    <ul class="list-footer">
+                        <li class="list">temos um sistema de pagamentos seguros</li>
+                        <li class="list">uma grande coleção de carros disponiveis</li>
+                        <li class="list">documentos feitos na hora</li>
+                    </ul>
+                    <a class="main-button" href="#">veja mais</a>
+                </section>
+    </main>
+    <footer class="footer">
+        <h2 class="title-h2-settings title-h2-settings-footer">
+            Cadastre-se para ter sua primeira experiencia
+        </h2>
+        <fieldset>
+            <input type="email" name="email" id="email" placeholder="Digite seu email">
+            <input type="submit" value="Cadastrar">
+        </fieldset>
+        <article >
+            <h3 class="title-h3-settings title-h3-settings-footer">
+                NexaNova
+            </h3>
+            <p class="p-settings p-settings-footer">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nihil et ex odio rerum porro harum, nemo expedita eveniet excepturi?
+            </p>
+            <div class="social-icons">
+                <a href="#"><img class="icon" src="image/fb-icon.svg" alt=""></a>
+                <a href="#"><img class="icon" src="image/insta-icon.svg" alt=""></a>
+                <a href="#"><img class="icon" src="image/linkedin-icon.svg" alt=""></a>
+                <a href="#"><img class="icon" src="image/twitter-icon.svg" alt=""></a>
+            </div>
+        </article>
+        <p class="p-settings">
+            Site recriado por André Schimith, baseado no NexaNova.
+        </p>
+    </footer>
+    <script>
+        function clickMenu(){
+            if(nav.style.display == 'block'){
+                nav.style.display = 'none'
+            } else{
+                nav.style.display = 'block'
+            }
+        }
+
+    </script>
+</body>
+</html>

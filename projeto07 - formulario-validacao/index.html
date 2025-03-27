@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário com validação</title>
+</head>
+
+<body>
+    <form action="post">
+        <fieldset>
+            <label for="nome">Seu nome: </label>
+            <input required autocomplete="off" placeholder="Digite seu nome" type="text" name="nome" id="nome">
+            <label for="email">Email: </label>
+            <input required placeholder="Digite um email válido" type="email" name="email" id="email">
+            <label for="assunto">Assunto</label>
+            <input required type="text" name="assunto" id="assunto">
+            <label for="texto">Mensagem</label>
+            <textarea name="texti" id="texto" rows="5" cols="20"></textarea>
+            <div class="botoes">
+                <input class="botao green" type="submit" value="Enviar">
+                <input class="botao red" type="reset" value="Apagar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

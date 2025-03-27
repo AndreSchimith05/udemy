@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 100vh;
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-variant: small-caps;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.438);
+    padding: 5px;
+    width: fit-content;
+    border-radius: 5px;
+    border-bottom: 2px solid black;
+}
+.list-wrapper{
+    background-color: white;
+    padding: 10px;
+    width: fit-content;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.515);
+    overflow: auto;
+}
+.list-item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+    padding: 5px;
+    border-radius: 3px;
+}
+.list-item__content{
+    flex-grow: 1;
+}
+.list-item:hover{
+    background-color:rgba(211, 211, 211, 0.379);
+}
+.list-item__action{
+    opacity: 0;
+}
+.list-item:hover .list-item__action{
+    opacity: 0.5;
+}
+.list-item__imagen img{
+    width: 50px;
+    border-radius: 50%;
+}
+.list-item__name{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+.list-item__email{
+    color: gray;
+}
+
+.list-item__action a{
+    margin-right: 5px;
+}

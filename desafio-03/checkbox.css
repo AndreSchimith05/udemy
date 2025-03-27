@@ -1,0 +1,72 @@
+:root{
+    font-size: 62.5%;
+    background-color: darkblue;
+}
+/*input[type=checkbox]{
+    display: none;
+}
+label span{
+    font-size: 0.5rem;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: lightgreen;
+}
+input[type=checkbox]:checked + label span{
+    background-color: darkgreen;
+    position: relative;
+}
+input[type=checkbox]:checked + label span::before{
+    position: absolute;
+    color: white;
+    content: ".";
+    transform: scale(4);
+    left: 0.85em;
+    top:-0.59em;
+}*/
+.switch{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.switch input:focus+span{
+    border: 2px solid black;
+}
+span{
+    position: relative;
+    font-size: 2rem;
+    display: inline-block;
+    width: 3rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 0.5em;
+}
+span::before{
+    position: absolute;
+    top:0.05em;
+    content: "";
+    width: 0.6em;
+    height: 0.6em;
+    background-color: darkgrey;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+input[type=checkbox]{
+    outline: none;
+    width: 1px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+input[type=checkbox]:focus + span{
+    border: 1px solid rgba(0, 0, 0, 0.625);
+    box-sizing: border-box;
+
+}
+input[type=checkbox]:checked + span{
+    background-color: gray;
+    transition: background-color .5s;
+}
+input[type=checkbox]:checked + span::before{
+    transform: translateX(0.82em);
+}

@@ -1,0 +1,25 @@
+::selection{
+    background-color: plum;
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    background-color: blueviolet;
+}
+td{
+    text-align: left;
+}
+th,td{
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+tr:nth-child(even){
+    background-color: lightpink;
+}
+tr:nth-child(odd){
+    background-color: palevioletred;
+}
+tr:has(input[type="checkbox"]:checked){
+    background-color: plum;
+}

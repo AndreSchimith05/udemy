@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(imagens/bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 48px;
+}
+main > p{
+    margin: 0 auto;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.653);
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+    box-shadow: 1px 1px 1px black;
+}
+main > p, h1{
+    margin-top: 30px;
+}
+main{
+    margin: auto;
+    width: 960px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    gap: 15px;
+    padding: 15px;
+    border-radius:5px;
+    box-shadow: 1px 1px 5px black;
+}
+.container-img{
+
+    position: relative;
+}
+.hovered{
+    text-transform: capitalize;
+    text-align: left;
+    color: white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.717);
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+
+/* .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+}
+.container-img{
+    flex-basis: 250px;
+    flex-grow: 1;
+    height: 150px;
+    background-image: url(imagens/card_01.png);
+} */

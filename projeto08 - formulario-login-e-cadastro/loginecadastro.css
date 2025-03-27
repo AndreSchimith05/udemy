@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --body-background-color:#3B68B7;
+    --button-background-color:#3B68B7;
+    --title-color:#3B68B7;
+}
+@font-face{
+    font-family:Roboto;
+    src: url(font/Roboto-VariableFont_wdth\,wght.ttf) ;
+}
+body{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body-background-color);
+    font-family:Roboto;
+}
+form{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 1px 1px 3px black;
+}
+fieldset{
+    width: 48rem;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+legend{
+    color: var(--title-color);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+label{
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin: 0.5rem 0rem;
+}
+.input-text{
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid var(--body-background-color);
+}
+.input-text:focus:invalid{
+    outline: none;
+    border-bottom: 2px solid red;
+}
+.last-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0rem;
+}
+.button-section{
+    display: flex;
+    gap: 1rem;
+}
+.btn{
+    font-size: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--button-background-color);
+    color: white;
+}
+.btn:hover{
+    outline: 1px solid var(--button-background-color);
+    background-color: white;
+    color: var(--title-color);
+    cursor: pointer;
+}
+.no-color{
+    background-color: white;
+    color: var(--title-color);
+    outline: 1px solid var(--button-background-color);
+    text-decoration: none;
+    
+}
+.no-color:hover{
+    color: white;
+    background-color: var(--button-background-color);
+}
+.button-section p{
+    font-size: 1.4em;
+}
+.last-section{
+    display: flex;
+}
